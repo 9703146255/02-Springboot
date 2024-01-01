@@ -1,0 +1,8 @@
+1700796856963	Rename resource '01-ATSpringBootApplication'
+1700883906010	Rename resource '01-AutowiringBySetterMethod'
+1700886819990	Delete resource '04-AutowiringByConstructorInjection'
+1700888046661	Rename resource '05-AutowiringByConstructorInjection'
+1700899787527	Delete resource 'LoggingApp'
+1700912682922	Rename Java project '07-AutowiringByAmbiguity'
+1700913717452	Rename Java project '08-AutowiringByAmbiguity@Qualifier'
+1700913738018	Rename Java project '08-AutowiringByAmbiguity@Qualifier2'

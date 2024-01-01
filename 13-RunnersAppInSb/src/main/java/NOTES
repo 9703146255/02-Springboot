@@ -1,0 +1,39 @@
+ Execute any logic only once when our boot application got started.
+
+
+	1) ApplicationRunner -> run ( )
+
+	2) CommandLineRunner -> run ( )
+
+
+
+@Component
+public class MyAppRunner implements ApplicationRunner {
+
+    @Override
+    public void run(ApplicationArguments args) throws Exception {
+        System.out.println("AppRunner - run () method executed");
+    }
+}
+
+
+@Component
+public class MyCmdRunner implements CommandLineRunner {
+
+    @Override
+    public void run(String... args) throws Exception {
+        System.out.println("CmdRunner - run () method executed");
+    }
+}
+
+
+Usecase-1: We can use runners to load static data from db to our application
+
+Usecase-2: Cleanup staging tables in database
+
+Usecase-3 : Send email notification once application got started
+
+
+
+
+

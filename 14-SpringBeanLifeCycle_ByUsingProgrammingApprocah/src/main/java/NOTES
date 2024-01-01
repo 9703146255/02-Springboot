@@ -1,0 +1,96 @@
+
+		==>		1. Using Annotations:					==> @PostConstruct , @PreDestroy
+		
+		==>		2. XML Configuration:					==>	init-method="init", destroy-method="destroy"
+		
+		==>		3. Implementing Interfaces:				==>	InitializingBean[afterPropertiesSet()], DisposableBean(destroy()] 
+		===============================================================================================================================
+		==>		4. Configuring BeanPostProcessor:		==>	BeanPostProcessor[ // Implement postProcessBeforeInitialization and postProcessAfterInitialization]
+		
+		==>		5. Custom Method Invokers:			==>	myBean.init();  // Initialization logic, myBean.destroy();  // Destruction logic
+
+
+
+
+
+
+
+1. Using Annotations:
+======================
+			
+You can use annotations like @PostConstruct and @PreDestroy on methods
+ to indicate initialization and destruction methods.
+
+public class MyBean {
+    @PostConstruct
+    public void init() {
+        // Initialization logic
+    }
+
+    @PreDestroy
+    public void destroy() {
+        // Destruction logic
+    }
+}
+
+
+
+2. XML Configuration:
+======================
+You can define initialization and destruction methods in XML configuration
+ using init-method and destroy-method.
+
+
+<bean id="myBean" class="com.example.MyBean" init-method="init" destroy-method="destroy"/>
+
+
+
+
+3. Implementing Interfaces:
+============================
+
+You can implement interfaces like InitializingBean and DisposableBean 
+
+to define initialization and destruction logic.
+
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.DisposableBean;
+
+public class MyBean implements InitializingBean, DisposableBean 
+{
+    @Override
+    public void afterPropertiesSet() throws Exception
+     {
+        // Initialization logic
+      }
+
+    @Override
+    public void destroy() throws Exception
+    {
+        // Destruction logic
+    }
+}
+
+
+4. Configuring BeanPostProcessor:
+=================================
+
+You can implement BeanPostProcessor to intercept bean creation 
+
+and customize initialization and destruction logic.
+
+import org.springframework.beans.factory.config.BeanPostProcessor;
+
+public class MyBeanPostProcessor implements BeanPostProcessor {
+    // Implement postProcessBeforeInitialization and postProcessAfterInitialization
+}
+
+
+
+5. Custom Method Invokers:
+==========================
+You can define custom methods and invoke them explicitly in your application code for initialization and destruction.
+
+MyBean myBean = new MyBean();
+myBean.init();  // Initialization logic
+myBean.destroy();  // Destruction logic

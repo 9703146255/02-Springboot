@@ -1,0 +1,22 @@
+
+++++++++++++++++++
+Banner in Spring Boot[Company name or Project name we can use]
+++++++++++++++++++
+
+-> In Boot application console we can see spring logo that is called as Banner in Spring Boot
+
+-> We can customize banner text by creating "banner.txt" file under src/main/resources
+
+-> We can keep our company name or project name as Banner text in Ascii format
+
+Note: Generate Ascii text from here : https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Ashok%20IT
+
+-> Spring Boot banner having below 3 modes
+
+	1) console  ---- > it is default mode
+	2) log
+	3) off
+
+Note: If we set banner mode as off then banner will not printed
+
+		spring.main.banner-mode = off

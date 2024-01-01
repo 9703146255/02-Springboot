@@ -1,0 +1,42 @@
+WHEN WE SHOULD GO SINGLETONE AND PROTOTYPE
+=========================================
+Singleton Scope:
+
+==>	Default Scope: Singleton is the default scope in Spring. If you don't specify a scope, the bean will be treated as a singleton.
+
+==>	Usage: Use singleton scope when you want a single instance of the bean to be shared among multiple clients or throughout the entire application.
+
+Characteristics:
+===============
+==>	 A single instance of the bean is created, and it's reused for every request.
+
+==>	 The bean is created eagerly during the application context initialization.
+
+@Component
+@Scope("singleton")
+public class MySingletonBean {
+    // Bean definition
+}
+
+
+Prototype Scope:
+================
+
+==>	 Usage: Use prototype scope when you want a new instance of the bean to be created every time it is requested.
+
+Characteristics:
+================
+==>	 A new instance of the bean is created for each request.
+
+==>	 The bean is created lazily, i.e., only when it is requested.
+
+==>	 Spring does not manage the complete lifecycle of a prototype bean; 
+
+==>	 it creates the instance, injects dependencies, and hands it over to the client.
+
+@Component
+@Scope("prototype")
+public class MyPrototypeBean
+ {
+    // Bean definition
+}

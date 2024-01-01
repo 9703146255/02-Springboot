@@ -1,0 +1,153 @@
+!SESSION 2024-01-01 17:56:49.399 -----------------------------------------------
+eclipse.buildId=4.19.0.202306150758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4 -product org.springframework.boot.ide.branding.sts4 -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4 -product org.springframework.boot.ide.branding.sts4 -data D:\ASHOKIT\02-SpringBoot -product org.springframework.boot.ide.branding.sts4
+
+This is a continuation of log file D:\ASHOKIT\02-SpringBoot\.metadata\.bak_0.log
+Created Time: 2024-01-01 17:57:19.319
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-01 17:57:19.320
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\sts-4.19.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
+-cp
+C:\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes;C:\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=D:/ASHOKIT/02-SpringBoot/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1704112039311
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:19.322
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-01 17:57:19.384
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 7120
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-01-01 17:57:19.558
+!MESSAGE org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+!STACK 0
+java.lang.ClassNotFoundException: org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.getServerInterface(LanguageServersRegistry.java:196)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:291)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-01-01 17:57:31.730
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:32.093
+!MESSAGE Boot project ADDED: 01-SbApp
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:32.093
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:32.096
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:32.097
+!MESSAGE Boot project ADDED: 02-ATSpringBootApplicationComponentScan
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:32.217
+!MESSAGE Boot project ADDED: 02-ATSpringBootApplicationComponentScan2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:32.456
+!MESSAGE Boot project ADDED: 03-AutowiringBySetterMethod
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:32.624
+!MESSAGE Boot project ADDED: 04-AutowiringByConstructorInjection2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:32.786
+!MESSAGE Boot project ADDED: 04-AutowiringByConstructorInjection2conNullPntrException
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:33.052
+!MESSAGE Boot project ADDED: 04-AutowiringByConstructorInjection4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:33.127
+!MESSAGE Boot project ADDED: 05-AutowiringByFieldInjection
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:33.213
+!MESSAGE Boot project ADDED: 06-AutowiringConstructorSetterInjection
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:33.315
+!MESSAGE Boot project ADDED: 07-AutowiringByAmbiguity@Primary
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:33.422
+!MESSAGE Boot project ADDED: 08-AutowiringByAmbiguity@QualifierConstructor
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:33.547
+!MESSAGE Boot project ADDED: 08-AutowiringByAmbiguity@QualifierSetter
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:33.548
+!MESSAGE Boot project ADDED: 08-AutowiringByAmbiguity@Qualifierfield
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:33.650
+!MESSAGE Boot project ADDED: 09-AutoWiringMulDependentBeansSetterInjection
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:33.683
+!MESSAGE Boot project ADDED: 09-AutoWiringMulDependentBeansSetterInjection2PartialInjectionOK
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:33.881
+!MESSAGE Boot project ADDED: 10-AutoWiringMulDependentBeansConstructorInjection
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:33.883
+!MESSAGE Boot project ADDED: 10-AutoWiringMulDependentBeansConstructorInjection2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:34.060
+!MESSAGE Boot project ADDED: 10-AutoWiringMulDependentBeansConstructorInjection3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:34.290
+!MESSAGE Boot project ADDED: 10-AutoWiringMulDependentBeansConstructorInjection4PartailNO
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:34.413
+!MESSAGE Boot project ADDED: 11-AutoWiringMulDependentBeansFieldInjection
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:34.587
+!MESSAGE Boot project ADDED: 12-BannersAppInSb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:34.674
+!MESSAGE Boot project ADDED: 13-RunnersAppInSb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:34.844
+!MESSAGE Boot project ADDED: 14-SpringBeanLifeCycle_ByUsingProgrammingApprocah
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:34.952
+!MESSAGE Boot project ADDED: 15-SpringBeanLifeCycleByAnnotationApproach
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:35.035
+!MESSAGE Boot project ADDED: 16-SpringBeanLifeCycleByXmlApproach
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:35.102
+!MESSAGE Boot project ADDED: 17-AutoWiringMulDependentBeansConstructorSupportFullNotSupportPartial
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:35.195
+!MESSAGE Boot project ADDED: 18-AutoWiringMulDependentBeansSetterSupportFullAndSupportPartial
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-01 17:57:35.196
+!MESSAGE Boot project ADDED: 19-AutoWiringMulDependentBeansField

@@ -1,0 +1,16 @@
+
+======================
+Banner in Spring Boot
+======================
+
+
+spring.main.banner-mode=OFF
+
+
+OFF : Don't print banner 
+
+Console : Print banner on console  (it is default)
+
+LOG : Print banner in log file
+
+=> We can customize banner content by creating banner.txt file under src/main/resources folder
